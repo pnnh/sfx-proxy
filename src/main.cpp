@@ -5,6 +5,8 @@ using namespace boost::process;
 
 int main()
 {
+  std::cout << "hello world" << std::endl;
+
   ipstream pipe_stream;
   child c("gcc --version", std_out > pipe_stream);
 
